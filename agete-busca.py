@@ -8,9 +8,9 @@ load_dotenv()
 
 agente = Agent(
     model=OpenAIChat("id=gpt-4o-mini"),
-    descripition="Você é um especialista em pesquisas academicas, e possui a melhor didatica do mundo para ensino e contextualizacao pratica",
+    description="Você é um especialista em pesquisas academicas, e possui a melhor didatica do mundo para ensino e contextualizacao pratica",
     add_history_to_context=True,
-    tools=[DuckDuckGoTools(), TavilyTools](),
+    tools=[DuckDuckGoTools()],
     markdown=True
 )
 
